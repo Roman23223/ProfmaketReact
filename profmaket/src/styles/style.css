@@ -1,0 +1,267 @@
+@import "./reset.css";
+/* html*/
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+/* body*/
+.body{
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: normal;
+
+
+}
+
+/* navbar start*/
+.navbar_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo{
+    display: flex;
+    align-items: center;
+}
+.watsap_container{
+    display: flex;
+    align-items: center;
+}
+.language_container{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.button{
+    padding: 9px 50px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    text-decoration: none;
+    border-radius: 30px;
+
+    border:1px solid #9E72FA;
+}
+.button_p{
+    color: black;
+}
+.image{
+    margin-right: 10px;
+}
+.logo-image{
+    margin-right: 20px;
+}
+/* navbar end*/
+
+
+
+/* header start*/
+.header{
+    width: 100%;
+    background-image: url(../img/fon-header.jpg);
+    margin-bottom: 200px;
+
+}
+.header_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+.proect-p{
+    color: #fff;
+    font-size: 24px;
+}
+.buttons-one{
+    padding: 9px 50px;
+    color: #9E72FA;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    text-decoration: none;
+    border-radius: 30px;
+
+    border:1px solid #9E72FA;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+.buttons-two{
+    padding: 9px 50px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    text-decoration: none;
+    border-radius: 30px;
+
+    border:1px solid #9E72FA;
+    text-align: center;
+    background-color: #9E72FA;
+}
+
+/* header end*/
+
+/* peice start*/
+
+.section_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+}
+.text-p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 100px;
+
+}
+.container-makets{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+.buttons-three{
+    padding: 9px 50px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    text-decoration: none;
+    border-radius: 10px;
+
+    border:1px solid #9E72FA;
+    text-align: center;
+    background-color: #9E72FA;
+}
+/* price end*/
+
+/* works start*/
+.worksa_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+.works-name{
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+.works-image{
+    display: flex;
+    justify-content: space-between;
+}
+/* works end*/
+
+/* company start*/
+.company_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.company-name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #14151E;
+    margin-bottom: 50px;
+
+}
+.distrubution{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+/* company end*/
+
+/* footer start*/
+.footer{
+    width: 100%;
+    background-color: #281B42;
+    padding-top: 15px;
+}
+.footer_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    color: white;
+}
+.footer-logo{
+    line-height: 20px;
+    margin-right: 200px;
+}
+.footer-image{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-right: 15px;
+}
+.footer-nav{
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+.footer-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-number{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+.contact-email{
+    margin-right: 50px;
+}
+.contact-adres{
+    display: flex;
+    align-items: center; 
+}
+.footer-link{
+    color: #fff;
+    margin-right: 130px;
+}
+.number-image{
+    margin-right: 15px;
+}
+.adres-image{
+    margin-right: 15px;
+}
+/* footer end*/
