@@ -1,0 +1,98 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 15px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    nav a {
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    }
+    .list{
+        display: flex;
+        list-style: none;
+        gap: 25px;
+    }
+    
+    
+    #toggler, label{
+    display: none;
+    }
+    label i{
+        color: rgb(24, 24, 24);
+    }
+    .logo-image{
+        height: 100px;
+        width: 150px;
+    }
+    .list-links{
+        border: 1px solid purple;
+        padding: 7px 20px;
+        border-radius: 20px;
+    }
+
+    @media screen and (max-width: 650px){
+  
+		.menu{
+		width: 100%;
+		max-height: 0;
+		overflow: hidden;
+		}
+		label{
+		display: inline-flex;
+		font-size: 30px;
+		margin-bottom: 7px;
+		}
+		#toggler:checked~.menu{
+		max-height: 100%;
+		}
+		.list{
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		}
+	  } 
+      @media (max-width: 320px) {
+        .maket-image{
+          width: 270px;
+          height: 220px;
+        }
+        .buttons-three{
+          padding: 7px 20px;
+          font-size: 11px;
+        }
+        .work-image{
+          width: 270px;
+          height: 220px;
+        }
+        label{
+          font-size: 26px;
+          margin-bottom: 7px;
+          }
+          .logo-image{
+            height: 80px;
+            width: 120px;
+          }
+          nav {
+            font-size: 13px;
+            }
+            label{
+              font-size: 26px;
+              margin-bottom: 7px;
+              }
+              .logo-image{
+                  height: 80px;
+                  width: 120px;
+              }
+              nav {
+                  font-size: 13px;
+                  }
+    
+      }
+    
