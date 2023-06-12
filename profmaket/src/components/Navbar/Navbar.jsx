@@ -22,9 +22,8 @@ export default function Navbar() {
 
 				<li><NavLink to="/" >Главная</NavLink></li>
 				<li><NavLink to="/Works">Работы</NavLink></li>
-				<li><a href="#">Контакты</a></li>
-				<li><a className="list-links" href="#"> Расчитать макет </a></li>
-
+				<li><NavLink to="/Contacts">Контакты</NavLink></li>
+				<li><NavLink to="/Forms" className="list-links">Расчитать макет</NavLink></li>
 			</ul>
 		</div>
 	</nav>

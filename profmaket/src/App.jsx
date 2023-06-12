@@ -1,13 +1,14 @@
 import "./css/styles.css";
 
+import { NavLink } from 'react-router-dom';
+
 import logo from "./img/png/write-logo.png";
 import Navbar from "./components/Navbar/Navbar";
 import Count from "./components/Count/Count";
-import Price from "./components/Price/Price";
-import Workes from "./components/Works-small/Workes";
 import Numberses from "./components/Main-number/Numberses";
 import Mailes from "./components/Main-mail/Mailes";
 import Adresses from "./components/Main-adress/Adresses";
+import Workss from "./components/Works-big/Workss";
 
     function App() {
         return (
@@ -24,30 +25,25 @@ import Adresses from "./components/Main-adress/Adresses";
 
                     <div className="container-button">
                         <div className="buttons">
-                            <a className="buttons-one" href="">Расчитать стоимость макета</a>
-                        <a className="buttons-two" href="">Работы</a>
+                        <NavLink className="buttons-one" to="/Forms">Расчитать стоимость макета</NavLink>
+                        <NavLink className="buttons-two" to="/Works">Работы</NavLink>
                         </div>
                     </div>
                 </div>
             </div>
 
-            
-            <Price/>
 
-
-            <div className="section_work">
-                <div className="work_container">
+        
 
                     <div className="container-tekst">
                         <p>Работы</p>
                     </div>
 
-                    <Workes/>
 
-                </div>
-            </div>
 
-            <div className="footer">
+            <Workss/>
+
+            <div className="footter">
                 <div className="row">
                     <div className="col">
 
@@ -62,14 +58,17 @@ import Adresses from "./components/Main-adress/Adresses";
                         <div className="footer-group">
 
                             <div className="footer-nav">
+
                                 <div className="nav-link">
-                                    <a className="links" href="">Главная</a>
+                                    <NavLink to="/App" className="links" >Главная</NavLink>
                                 </div>
+
                                 <div className="nav-link">
-                                    <a className="links" href="">Работы</a>
+                                    <NavLink to="/Works" className="links">Работы</NavLink> 
                                 </div>
+
                                 <div  className="nav-link">
-                                    <a className="links" href="">Контакты</a>
+                                    <NavLink to="/Contacts"className="links" >Контакты</NavLink>
                                 </div>
 
                                 <Numberses/>

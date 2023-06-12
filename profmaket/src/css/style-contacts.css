@@ -7,15 +7,9 @@ html{
     box-sizing: inherit;
 }
 /* body*/
-.body{
-    font-style: normal;
-    font-size: 15px;
-    line-height: 1.2;
-    font-weight: normal;
-
-
+.Contacts{
+  min-height: 100hv;
 }
-
 
 /* navbar start */
 nav {
@@ -84,7 +78,10 @@ nav {
 /*  works-title  end*/
 
 /* contact start*/
-
+.contacts{
+  height: 100%;
+  position: relative;
+}
 .contact_container{
   max-width: 1200px;
   margin: 0 auto;
@@ -98,28 +95,36 @@ nav {
 
 
 .contact-image{
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 }
 .container-contact{
   display: flex;
   align-items: center;
 }
-
+.contact-title{
+  font-size: 25px;
+}
+.title-text{
+  font-size: 25px;
+}
 /* contact end*/
 
 .section-map{
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 /* footer start*/
-.footer{
+.footterr{
   width: 100%;
   background-color: #2e2e40 ;
   color: #e8e8e8;
-  margin-top: 60px;
+  margin-top: 30px;
+  position: absolute;
+  top:100hv;
 
 }
 .row{

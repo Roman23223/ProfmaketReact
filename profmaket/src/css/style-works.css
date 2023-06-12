@@ -7,13 +7,8 @@ html{
     box-sizing: inherit;
 }
 /* body*/
-.body{
-    font-style: normal;
-    font-size: 15px;
-    line-height: 1.2;
-    font-weight: normal;
-
-
+.Works{
+  min-height: 100hv;
 }
 
 
@@ -61,6 +56,10 @@ nav {
 
 
 /* works start*/
+.works{
+  height: 100%;
+  position: relative;
+}
 .work_container{
   max-width: 1200px;
   margin: 0 auto;
@@ -70,21 +69,18 @@ nav {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 26px;
   color: #000000;
-  padding-bottom: 80px;
 }
-
+.title-text{
+  font-size: 20px;
+}
 .container-works{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   justify-items:left;
 }
-.container-work{
-  margin-bottom: 35px;
-}
-
 .work-image{
   width: 300px;
   height: 250px;
@@ -116,14 +112,23 @@ nav {
   .work-image{
     margin-bottom: 15px;
   }
+  .works-title{
+    text-align: center;
+    font-size: 25px;
+  }
+  .title-text{
+    font-size: 25px;
+  }
 /*  works-title  end*/
 
 
 /* footer start*/
-.footer{
+.footerrr{
   width: 100%;
   background-color: #2e2e40 ;
   color: #e8e8e8;
+  position: absolute;
+  top:100hv;
 
 }
 .row{
@@ -152,6 +157,7 @@ nav {
   text-decoration: none;
   color: #e8e8e8;
 }
+
 /* footer end*/
 
 

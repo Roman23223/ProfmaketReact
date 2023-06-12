@@ -1,14 +1,26 @@
-import React from 'react';
+import "../../css/styles.css";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
+const Numberses = () => {
+  const [data, setData] = useState('');
 
-export default function Numberses() {
+  useEffect(() => {
+    axios.get('http://cd65068-django-5gmbq.tw1.ru/api/telephone') 
+      .then((response) => {
+        console.log(response.data);
+        setData(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
 
-    return (
+  return (
+    <div className="contact-number">
+      {data.number}
+    </div>
+  );
+};
 
-        <div className="contact-number">
-            8-xxxxxxxx
-        </div>
-
-    )
-
-}
+export default Numberses;

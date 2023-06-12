@@ -5,7 +5,8 @@ import Navbar from "./../components/Navbar/Navbar";
 import Numberses from "./../components/Main-number/Numberses";
 import Mailes from "./../components/Main-mail/Mailes";
 import Adresses from "./../components/Main-adress/Adresses";
-import Title from "./../components/Title/Title";
+import Title from "../components/Title-works/Title";
+import Workss from "../components/Works-big/Workss";
 
     function Works() {
         return (
@@ -17,9 +18,9 @@ import Title from "./../components/Title/Title";
 
             <Title/>
             
+            <Workss/>
 
-
-            <div className="footer">
+            <div className="footerrr">
                 <div className="row">
                     <div className="col">
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Routes from "./routing/Routes";
-import "./css/styles.css";
 import reportWebVitals from './reportWebVitals';
 
 
@@ -11,6 +10,8 @@ root.render(
     <Routes />
   </React.StrictMode>
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

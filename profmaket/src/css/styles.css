@@ -7,13 +7,8 @@ html{
     box-sizing: inherit;
 }
 /* body*/
-.body{
-    font-style: normal;
-    font-size: 15px;
-    line-height: 1.2;
-    font-weight: normal;
-
-
+.App{
+	min-height: 100hv;
 }
 
 *{
@@ -64,10 +59,13 @@ label i{
 /* header start*/
 .header{
 	width: 100%;
-	background-image: url(../img/png/fon-header.jpg);
-	margin-bottom: 200px;
+	background-image: url(../img/jpg/phone111.jpg);
+	margin-bottom: 70px;
 	margin-top: 100px;
-  
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 5px;
   }
   .header_container{
 	max-width: 1200px;
@@ -117,59 +115,7 @@ label i{
   
   /* header end*/
   
-  /* peice start*/
   
-  .section_container{
-	max-width: 1200px;
-	margin: 0 auto;
-	margin-bottom: 200px;
-  }
-  .text-h{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 26px;
-	color: #000000;
-  }
-  .text-p{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 26px;
-	color: #000000;
-	margin-bottom: 100px;
-	margin-top: 30px;
-  
-  }
-  .container-makets{
-	display: flex;
-	justify-content: space-between;
-	line-height: 50px;
-	padding-left: 15px;
-  }
-  .container-text{
-	padding-left: 15px;
-  }
-  .buttons-three{
-	padding: 9px 50px;
-	color: #fff;
-	font-size: 18px;
-	font-family: 'Gilroy';
-	font-style: normal;
-	text-decoration: none;
-	border-radius: 10px;
-  
-	border:1px solid #9E72FA;
-	text-align: center;
-	background-color: #9E72FA;
-  }
-  .maket-image{
-	width: 300px;
-	height: 250px;
-  }
-  /* price end*/
   
   /* works start*/
   .work_container{
@@ -186,6 +132,7 @@ label i{
 	color: #000000;
 	padding-bottom: 80px;
 	padding-left: 15px;
+	text-align: center;
   }
   
   .container-works{
@@ -199,19 +146,28 @@ label i{
   .work-image{
 	width: 300px;
 	height: 250px;
+	border-radius: 5px;
   }
  .works-link{
 	text-decoration: none;
 	color: black;
  }
+ .works-podtitle{
+	font-size: 25px;
+	text-align: center;
+ }
+ .text-number{
+	color: #fff;
+ }
   /* works end*/
   
   /* footer start*/
-  .footer{
+  .footter{
 	width: 100%;
 	background-color: #2e2e40 ;
 	color: #e8e8e8;
-  
+	position: absolute;
+	top:100hv;
   }
   .row{
 	max-width: 1200px;
@@ -351,6 +307,15 @@ label i{
 		grid-template-columns: repeat(1, 1fr);
 		justify-items: center;
 		line-height: 60px;
+	  }
+	  .buttons-one{
+		padding: 9px 35px;
+		font-size: 14px;
+		margin-bottom: 40px;
+	  }
+	  .buttons-two{
+		padding: 9px 35px;
+		font-size: 14px;
 	  }
   
 	}
