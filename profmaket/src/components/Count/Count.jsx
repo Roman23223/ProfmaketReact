@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function Count() {
+  const [projectsCount, setProjectsCount] = useState(0);
 
-    return (
+  useEffect(() => {
+    axios.get('http://cd65068-django-5gmbq.tw1.ru/api/work')
+      .then(response => {
+        setProjectsCount(response.data.length);
+      })
+      .catch(error => {
+        console.error('Error fetching projects:', error);
+      });
+  }, []);
 
-        <div className="container-proect">
-            <p className="proect-p">  Всего проектов: </p>
+  return (
+    <div>
+        <div className="container-project">
+            <p className="project-p">Всего проектов: {projectsCount}</p>
         </div>
-
-    )
-
+    </div>
+  );
 }

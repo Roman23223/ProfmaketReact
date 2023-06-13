@@ -2,6 +2,8 @@ import React, {useEffect,useState} from 'react';
 import $ from "jquery";
 import IMask from 'imask';
 import axios from 'axios';
+import { Navigate } from 'react-router-dom';
+
 
 import name from "./../../img/svg/name.svg";
 import telephone from "./../../img/svg/telephone.svg";
@@ -17,6 +19,8 @@ export default function Formss() {
     const handleClickSize = (event) => {
         setValueSize(event.target.textContent);
     };
+    
+    const [redirectToHome, setRedirectToHome] = useState(false);
 
 
     const [valueTime, setValueTime] = useState('');
@@ -24,6 +28,11 @@ export default function Formss() {
     const handleClickTime = (event) => {
         setValueTime(event.target.textContent);
     };
+
+    const [isChecked, setIsChecked] = useState(false);
+    const handleCheckboxChange = e => {
+    setIsChecked(e.target.checked);
+    };  
 
 
     useEffect(() => {
@@ -68,7 +77,9 @@ export default function Formss() {
             comment
         });
         console.log(response.data);
-        alert("Форма успешно отправлена!", "alert");
+        if (response.status === 201) {
+            setRedirectToHome(true);
+        }
         } catch (error) {
         if (error.response) {
         // Запрос сделан, и сервер ответил с ошибкой
@@ -83,11 +94,13 @@ export default function Formss() {
         }
         }
         };
-    
+
 
     return (
+        
 
             <div className="form_container">
+                {redirectToHome && <Navigate to="/" />}
                 <form  onSubmit={handleSubmit}>
 
                     <div className="brief">
@@ -166,9 +179,27 @@ export default function Formss() {
                     </div>
 
                     <div className="button_form">
-                        <button type="submit" className="form_action">Отправить заявку</button>
+                    
+                   
+
+                    <div className="container-agreement">
+                        <p>
+                            <input className="checkboxing"  type="checkbox" checked={isChecked} onChange={handleCheckboxChange} required />
+                                Я согласен с политикой конфиденциальности
+                        </p>
                     </div>
 
+                    <button type="submit" className="form_action">Отправить заявку</button>
+
+                    {!isChecked && (
+                    <div className="container-config" style={{ color: 'red' }}>
+                         Для продолжения необходимо согласиться с нашей политикой конфиденциальности
+                    </div>
+                     )}
+
+                    </div>
+
+                    
                 </form>
         
             </div>

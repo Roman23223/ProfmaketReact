@@ -189,6 +189,15 @@ nav {
   position: absolute;
   top: 100px;
 }
+.container-config{
+  margin-top: 20px;
+}
+.container-agreement{
+  text-align: right;
+}
+.checkboxing{
+  margin-right: 7px;
+}
 /* form  end */
 
 

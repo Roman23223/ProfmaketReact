@@ -99,12 +99,16 @@ nav {
   height: 40px;
   margin-right: 10px;
 }
-.container-contact{
+.contact-group{
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
-.contact-title{
+.contact-titles{
   font-size: 25px;
+}
+.contact-podtitles{
+  font-size: 20px;
 }
 .title-text{
   font-size: 25px;
@@ -170,6 +174,14 @@ nav {
     justify-items: center;
     line-height: 60px;
   }
+  .container-contacts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: left;
+  }
+  .container-contact{
+    margin-bottom: 40px;
+  }
 }
 
 
@@ -182,12 +194,6 @@ nav {
       padding-top: 70px;
       padding-bottom: 70px;
     }
-   .container-contacts{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-items: flex-start;
-    padding-left: 50px;
-   }
    .container-contact{
     margin-bottom: 90px;
    }
@@ -219,7 +225,7 @@ nav {
     .footer-nav{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      justify-items: center;
+      justify-items: left;
       line-height: 60px;
     }
 
@@ -237,6 +243,14 @@ nav {
     .footer-logo{
       margin-bottom: 50px;
     }
+    .container-contacts{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-items: left;
+    }
+    .container-contact{
+      margin-bottom: 40px;
+    }
 
   }
   @media (max-width: 550px) {
@@ -246,17 +260,8 @@ nav {
       justify-items: center;
       line-height: 60px;
     }
-    .container-contacts{
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      justify-items: center;
-      padding-left: 30px;
-     }
-     .container-contact{
-      margin-bottom: 90px;
-     }
      .iframe{
-      height: 320;
+      height: 320px;
      }
 
   }
@@ -291,5 +296,17 @@ nav {
         nav {
           font-size: 13px;
           }
-
+          .title-text{
+            font-size: 18px;
+          }
+          .contact-image{
+            width: 30px;
+            height: 30px;
+          }
+          .contact-podtitles{
+            font-size: 18px;
+          }
+          .contact_container{
+            margin-bottom: 50px;
+          }
   }

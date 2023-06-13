@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Numberses = () => {
-  const [data, setData] = useState('');
+
+ const [data, setData] = useState([]);
 
   useEffect(() => {
     axios.get('http://cd65068-django-5gmbq.tw1.ru/api/telephone') 
@@ -17,10 +18,19 @@ const Numberses = () => {
   }, []);
 
   return (
-    <div className="contact-number">
-      {data.number}
+    <div>
+
+        {data.map( telephone => (
+        
+        <div className="contact-number">
+          <p className="contact-links">{telephone.number}</p>
+        </div>
+
+        ))}
+
     </div>
-  );
-};
+
+  )
+}
 
 export default Numberses;

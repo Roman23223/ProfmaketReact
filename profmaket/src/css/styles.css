@@ -112,7 +112,10 @@ label i{
 	text-align: center;
 	background-color: #9E72FA;
   }
-  
+.project-p{
+	color: #fff;
+	font-size: 24px;
+  }
   /* header end*/
   
   
@@ -355,6 +358,12 @@ label i{
 			nav {
 				font-size: 13px;
 				}
-  
+
+				.links{
+					font-size: 14px;
+				}
+				.contact-links{
+					font-size: 14px;
+				}
 	}
   

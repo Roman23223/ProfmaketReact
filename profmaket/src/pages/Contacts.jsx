@@ -5,8 +5,10 @@ import Navbar from "./../components/Navbar/Navbar";
 import Numberses from "./../components/Main-number/Numberses";
 import Mailes from "./../components/Main-mail/Mailes";
 import Adresses from "./../components/Main-adress/Adresses";
-import Contactss from "../components/contacts/Contactss";
 import Titlec from "../components/Title-contacts/Titlec";
+import Numbers from "../components/Contact-number/Numbers";
+import Emails from "../components/Contact-mail/Emails";
+import Adress from "../components/Contact-adress/Adress";
 
     function Contacts() {
         return (
@@ -18,7 +20,22 @@ import Titlec from "../components/Title-contacts/Titlec";
 
                 <Titlec/>
                 
-                <Contactss/>
+                <div class="section_contact">
+                    <div class="contact_container">
+
+                        <div class="container-contacts">
+
+                            <Adress/>
+
+                            <Numbers/>
+
+
+                            <Emails/>
+
+                            </div>
+
+                        </div>
+                </div>
 
 
             <div class="section-map">

@@ -1,34 +1,38 @@
-import React, { useEffect, useState } from 'react';
+import "../../css/styles.css";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-export default function Mailes() {
-const [data, setData] = useState(null);
-const [error, setError] = useState(null);
+const Mailes = () => {
 
-useEffect(() => {
-fetch('http://cd65068-django-5gmbq.tw1.ru/api/email')
-.then(response => {
-if (!response.ok) {
-throw new Error('Network response was not ok');
-}
-return response.json();
-})
-.then(data => {
-setData(data);
-})
-.catch(error => {
-setError(error);
-});
-}, []);
+ const [data, setData] = useState([]);
 
-if (error) {
-return <div>Error: {error.message}</div>;
-} else if (!data) {
-return <div>Loading...</div>;
-} else {
-return (
-<div className="contact-mail">
-{data.email}
-</div>
-);
+  useEffect(() => {
+    axios.get('http://cd65068-django-5gmbq.tw1.ru/api/email') 
+      .then((response) => {
+        console.log(response.data);
+        setData(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
+  return (
+    <div>
+
+        {data.map( email => (
+        
+        <div className="contact-mail">
+            
+            <p className="contact-links">{email.title} - {email.email}</p>
+
+        </div>
+
+        ))}
+
+    </div>
+
+  )
 }
-}
+
+export default Mailes;

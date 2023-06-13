@@ -1,6 +1,6 @@
 import "./css/styles.css";
 
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import logo from "./img/png/write-logo.png";
 import Navbar from "./components/Navbar/Navbar";
@@ -60,15 +60,15 @@ import Workss from "./components/Works-big/Workss";
                             <div className="footer-nav">
 
                                 <div className="nav-link">
-                                    <NavLink to="/App" className="links" >Главная</NavLink>
+                                    <Link to="/App" className="links" >Главная</Link>
                                 </div>
 
                                 <div className="nav-link">
-                                    <NavLink to="/Works" className="links">Работы</NavLink> 
+                                    <Link to="/Works" className="links">Работы</Link> 
                                 </div>
 
                                 <div  className="nav-link">
-                                    <NavLink to="/Contacts"className="links" >Контакты</NavLink>
+                                    <Link to="/Contacts"className="links" >Контакты</Link>
                                 </div>
 
                                 <Numberses/>
