@@ -7,7 +7,7 @@ const Adresses = () => {
  const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://cd65068-django-5gmbq.tw1.ru/api/address') 
+    axios.get('https://admin.prof-maket.ru/api/address') 
       .then((response) => {
         console.log(response.data);
         setData(response.data);

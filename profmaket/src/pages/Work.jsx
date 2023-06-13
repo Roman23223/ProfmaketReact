@@ -32,7 +32,7 @@ export default function Work() {
     useEffect(() => {
 
 
-        axios.get(`http://cd65068-django-5gmbq.tw1.ru/api/work/${id}/`)
+        axios.get(`https://admin.prof-maket.ru/api/work/${id}/`)
         .then(response => {
         console.log(response.data);
         setData(response.data);

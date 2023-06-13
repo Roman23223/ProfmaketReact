@@ -5,7 +5,7 @@ export default function Count() {
   const [projectsCount, setProjectsCount] = useState(0);
 
   useEffect(() => {
-    axios.get('http://cd65068-django-5gmbq.tw1.ru/api/work')
+    axios.get('https://admin.prof-maket.ru/api/work')
       .then(response => {
         setProjectsCount(response.data.length);
       })

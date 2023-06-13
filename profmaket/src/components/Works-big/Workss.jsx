@@ -11,7 +11,7 @@ export default function Workss() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-    axios.get('http://cd65068-django-5gmbq.tw1.ru/api/work')
+    axios.get('https://admin.prof-maket.ru/api/work')
     .then(response => {
     console.log(response.data);
     setData(response.data);

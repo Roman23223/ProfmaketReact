@@ -7,7 +7,7 @@ const Mailes = () => {
  const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://cd65068-django-5gmbq.tw1.ru/api/email') 
+    axios.get('https://admin.prof-maket.ru/api/email') 
       .then((response) => {
         console.log(response.data);
         setData(response.data);

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image should render Image component correctly 1`] = `
+<img
+  alt="Test Image"
+  src="test-image.png"
+  style={
+    Object {
+      "maxWidth": "90%",
+    }
+  }
+/>
+`;

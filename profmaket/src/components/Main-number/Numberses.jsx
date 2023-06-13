@@ -7,7 +7,7 @@ const Numberses = () => {
  const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://cd65068-django-5gmbq.tw1.ru/api/telephone') 
+    axios.get('https://admin.prof-maket.ru/api/telephone') 
       .then((response) => {
         console.log(response.data);
         setData(response.data);

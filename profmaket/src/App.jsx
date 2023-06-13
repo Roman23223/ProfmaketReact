@@ -32,14 +32,9 @@ import Workss from "./components/Works-big/Workss";
                 </div>
             </div>
 
-
-        
-
-                    <div className="container-tekst">
+                  <div className="container-tekst">
                         <p>Работы</p>
                     </div>
-
-
 
             <Workss/>
 

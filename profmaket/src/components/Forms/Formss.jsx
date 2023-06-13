@@ -4,11 +4,13 @@ import IMask from 'imask';
 import axios from 'axios';
 import { Navigate } from 'react-router-dom';
 
+import name from "../../img/svg/name.svg";
+import email from "../../img/svg/email.svg";
+import telephone from "../../img/svg/telephone.svg";
+import message from "../../img/svg/message.png"
 
-import name from "./../../img/svg/name.svg";
-import telephone from "./../../img/svg/telephone.svg";
-import email from "./../../img/svg/email.svg";
-import message from "./../../img/svg/message.png";
+
+
 
 
 export default function Formss() {
@@ -68,7 +70,7 @@ export default function Formss() {
         const comment = document.getElementById('comment').value;
 
         try {
-        const response = await axios.post("http://cd65068-django-5gmbq.tw1.ru/api/application/create", { 
+        const response = await axios.post("https://admin.prof-maket.ru/api/application/create", { 
             size, 
             product_time, 
             sender_name, 
